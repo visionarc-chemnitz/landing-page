@@ -2,38 +2,49 @@ import React from "react";
 
 export const Team = (props) => {
   const teamStyle = {
-    display: "flex",
-    flexWrap: "wrap", // Allow wrapping for responsive design
-    justifyContent: "center", // Center items in the row
-    margin: "0 auto", // Center the flex container
+    display: "grid",
+    gap: "15px",
+    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", // Responsive grid layout
   };
 
   const itemStyle = {
-    flex: "0 0 20%", // Each item takes up 20% of the row
-    maxWidth: "20%", // Ensure it doesn't exceed 20%
-    padding: "5px", // Add padding around each item for spacing
-    boxSizing: "border-box", // Include padding in width/height calculation
+    padding: "5px",
+    boxSizing: "border-box",
+  };
+
+  const imgContainerStyle = {
+    width: "100%",
+    height: "250px",        // Adjust height to ensure more of the image is visible
+    overflow: "hidden",      // Hide overflow to prevent showing half an image
+    position: "relative",    // Position relative for absolute children
   };
 
   const imgStyle = {
-    width: "100%", // Make images responsive
-    height: "auto", // Maintain aspect ratio
+    width: "100%",            // Make the image take the full width of the container
+    height: "100%",           // Make the image take the full height of the container
+    objectFit: "contain",     // Ensure the entire image is contained within the box
+    position: "absolute",      // Position absolutely to center
+    top: "50%",               // Move image down by 50%
+    left: "50%",              // Move image to the right by 50%
+    transform: "translate(-50%, -50%)", // Center the image
   };
 
   return (
     <div id="team" className="text-center">
       <div className="container">
-        <div className="row"> {/* Use Bootstrap row for proper layout */}
-        <div className="section-title text-center">
-          <h2>Meet Our Team</h2>
+        <div className="row">
+          <div className="section-title text-center">
+            <h2>Meet Our Team</h2>
+          </div>
         </div>
-        </div>
-        <div style={teamStyle}> {/* Use inline style for the team container */}
+        <div style={teamStyle}> {/* Use inline style for the team grid */}
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} style={itemStyle}> {/* Use inline style for each item */}
+                <div key={`${d.name}-${i}`} style={itemStyle}>
                   <div className="thumbnail hover-bg">
-                    <img src={d.img} alt={d.name} className="team-img" style={imgStyle} />
+                    <div style={imgContainerStyle}> {/* Add container for proper sizing */}
+                      <img src={d.img} alt={d.name} className="team-img" style={imgStyle} />
+                    </div>
                     <div className="caption">
                       <h4>{d.name}</h4>
                       <p>{d.job}</p>

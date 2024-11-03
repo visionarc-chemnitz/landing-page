@@ -1,5 +1,4 @@
 import { useState } from "react";
-import emailjs from "emailjs-com";
 import React from "react";
 
 const initialState = {
@@ -7,6 +6,7 @@ const initialState = {
   email: "",
   message: "",
 };
+
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
 
@@ -14,50 +14,34 @@ export const Contact = (props) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
+
   const clearState = () => setState({ ...initialState });
-  
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-    
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    console.log("Form submitted:", { name, email, message });
+    clearState();
   };
+
   return (
     <div>
       <div id="contact">
         <div className="container">
-          <div className="col-md-8">
-            <div className="row">
+          <div className="row">
+            <div className="col-md-8">
               <div className="section-title">
                 <h2>Get In Touch</h2>
-                <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
-                </p>
+                <p>Please fill out the form below to send us an email and we will get back to you as soon as possible.</p>
               </div>
-              <form name="sentMessage" validate action="https://api.web3forms.com/submit" method="POST">
+              <form name="sentMessage" onSubmit={handleSubmit} noValidate>
                 <div className="row">
-                  <div className="col-md-6">
+                  <div className="col-md-6 offset-md-3">  {/* Centering with offset */}
                     <div className="form-group">
-                    <input type="hidden" name="access_key" value="f2854aa1-bf75-4ef7-8a7a-46922de4ab03" />
                       <input
                         type="text"
                         id="name"
                         name="name"
-                        className="form-control"
+                        className="form-control form-control-custom"
                         placeholder="Name"
                         required
                         onChange={handleChange}
@@ -65,13 +49,13 @@ export const Contact = (props) => {
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-6 offset-md-3">  {/* Centering with offset */}
                     <div className="form-group">
                       <input
                         type="email"
                         id="email"
                         name="email"
-                        className="form-control"
+                        className="form-control form-control-custom"
                         placeholder="Email"
                         required
                         onChange={handleChange}
@@ -84,7 +68,7 @@ export const Contact = (props) => {
                   <textarea
                     name="message"
                     id="message"
-                    className="form-control"
+                    className="form-control form-control-custom"
                     rows="4"
                     placeholder="Message"
                     required
@@ -92,58 +76,21 @@ export const Contact = (props) => {
                   ></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
-                <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
-                </button>
+                <button type="submit" className="btn btn-custom btn-lg">Send Message</button>
               </form>
             </div>
-          </div>
-          <div className="col-md-3 col-md-offset-1 contact-info">
-            <div className="contact-item">
+            <div className="col-md-4 contact-info">
               <h3>Contact Info</h3>
               <p>
-                <span>
-                  <i className="fa fa-map-marker"></i> Address
-                </span>
+                <span><i className="fa fa-map-marker"></i> Address</span>
                 {props.data ? props.data.address : "loading"}
               </p>
-            </div>
-            <div className="contact-item">
               <p>
-                <span>
-                  <i className="fa fa-envelope-o"></i> Email
-                </span>{" "}
+                <span><i className="fa fa-envelope-o"></i> Email</span>
                 {props.data ? props.data.email : "loading"}
               </p>
             </div>
           </div>
-          <div className="col-md-12">
-            <div className="row">
-              <div className="social">
-                <ul>
-                  <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.linkedIn : "/"}>
-                      <i className="fa fa-linkedIn"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="footer">
-        <div className="container text-center">
-          <p>
-            &copy; 2024-2025 VisionArc.
-            <p><b>Disclaimer:</b>This website is not associated with an actual company but is part of the "Planspiel" web engineering project at the TU Chemnitz. </p>
-          </p>
         </div>
       </div>
     </div>

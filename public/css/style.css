@@ -167,7 +167,7 @@ hr {
   text-transform: uppercase;
   color: #fff;
   background-color: #5ca9fb;
-  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background-image: linear-gradient(to right, #3c5876 0%, #6372ff 100%);
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -210,13 +210,22 @@ a:focus,
   padding: 0;
   background: url(../img/intro-bg.jpg) center center no-repeat;
   background-color: #e5e5e5;
+  background-size: cover; /* Ensure the image covers the entire area */
+  height: 100vh; /* Set height to viewport height for full-screen effect */
+  position: relative;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
 .intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
+  position: absolute; /* Positioning the overlay */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(99, 114, 255, 0.5);
+  z-index: 1; /* Ensure the overlay is above the background */
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
@@ -232,7 +241,7 @@ a:focus,
   color: #5ca9fb;
 }
 .intro p {
-  color: #fff;
+  color: #5c5d6a;
   font-size: 22px;
   font-weight: 300;
   line-height: 30px;
@@ -295,6 +304,12 @@ header .intro-text {
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;
+
+}
+#about .about-text {
+  padding-right: 10%; /* Adjust for padding based on your design */
+  max-width: 600px; /* Limit the width for better readability */
+  margin: 0 auto; /* Center the content */
 }
 #about img {
   width: 520px;
@@ -501,7 +516,7 @@ header .intro-text {
 #contact .btn-custom {
   margin: 30px 0;
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px  #fff;
 }
 #contact .btn-custom:hover {
   color: #1f386e;

@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding and borders do not affect width calculations */
+}
+
+html, body {
+  width: 100%; /* Ensure full width */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+  max-width: 1200px; /* Adjust to your design */
+  margin: 0 auto; /* Center the container */
+  padding: 0 15px; /* Add some horizontal padding */
+}
+
+img {
+  max-width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
 @media screen and (max-width: 400px) {
   #features {
     padding: 20px;
