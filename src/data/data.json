@@ -1,0 +1,129 @@
+{
+  "Header": {
+    "title": "Where Vision Meets Innovation",
+    "paragraph": "When revolutionary ideas meet new solutions, the future is shaped, and a world of opportunities unfolds."
+  },
+  "About": {
+    "paragraph": "VisionArc is a startup located in Chemnitz, specializing in AI systems, web development, and DevOps solutions. We are committed to delivering exceptional support and innovative technology services to help your business thrive.",
+    "Why": [
+      "Clean Code",
+      "Lifetime Support",
+      "Expert Team",
+      "Rapid Development"
+    ],
+    "Why2": [
+      "Cost-Effective Services",
+      "Tailored Solutions",
+      "Cost-Effective Service" 
+       ]
+  },
+  "Gallery": [
+    {
+      "title": "AI Solutions Projects",
+      "subTitle": "For more information, please contact us",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Web & Mobile Development Projects",
+      "subTitle": "For more information, please contact us",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Cloud & DevOps Projects",
+      "subTitle": "For more information, please contact us",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-cogs",
+      "name": "AI Solutions",
+      "text": "We leverage AI to automate workflows, enhance decision-making, and elevate user experiences. Our tailored solutions align with your unique business goals."
+    },
+    {
+      "icon": "fa fa-desktop",
+      "name": "Web & Mobile Development",
+      "text": "Our web and mobile applications deliver seamless, user-friendly experiences tailored to your needs. Built with cutting-edge technology, they ensure efficiency, scalability, and performance across all devices"
+    },
+    {
+      "icon": "fa fa-cloud",
+      "name": "Cloud & DevOps",
+      "text": "Our cloud and DevOps solutions ensure scalable, secure applications with optimized performance, accelerating business growth through automation."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/1.png",
+      "name": "Eshwari Kangutkar",
+      "job": "Developer"
+    },
+    {
+      "img": "img/team/2.jpg",
+      "name": "Toushika Islam",
+      "job": "Developer"
+    },
+    {
+      "img": "img/team/3.jpg",
+      "name": "Roshita Shakya",
+      "job": "Developer"
+    },
+    {
+      "img": "img/team/4.jpeg",
+      "name": "Shrushti Sakala",
+      "job": "Developer"
+    },
+    {
+      "img": "img/team/5.jpg",
+      "name": "Omkar",
+      "job": "Developer"
+    }
+  ],
+  "Contact": {
+    "address": "Chemnitz 09126, Germany",
+    "linkedIn":"https://www.linkedin.com/in/vision-arc-5bb507336/",
+    "email": "visionarc.chemnitz@gmail.com",
+    "twitter": "https://x.com/visionArc_"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ]
+}
