@@ -37,6 +37,7 @@ export const Contact = (props) => {
               <div className="row">
                 <div className="col-md-6">
                   <div className="form-group">
+                  <input type="hidden" name="access_key" value="f2854aa1-bf75-4ef7-8a7a-46922de4ab03" />
                     <input
                       type="text"
                       id="name"
@@ -79,7 +80,7 @@ export const Contact = (props) => {
                 ></textarea>
                 <p className="help-block text-danger"></p>
               </div>
-              <button type="submit" className="btn btn-custom btn-lg btn-block">
+              <button type="submit" className="btn btn-custom" style={{background:"'6372ff"}}>
                 Send Message
               </button>
             </form>

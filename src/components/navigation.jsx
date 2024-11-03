@@ -11,15 +11,14 @@ export const Navigation = (props) => {
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
           >
-            {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
+            <span className="sr-only">Toggle navigation</span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top" style={{ textTransform: 'none' }}>
-            VisionArc
-          </a>{" "}
+          <a className="navbar-brand" href="#page-top">
+            <img src={`${process.env.PUBLIC_URL}/img/logo.png`} alt="Logo" className="navbar-logo" />
+          </a>
         </div>
 
         <div
@@ -38,15 +37,11 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="page-scroll">
-               Our Portfolio
+              <a href="#milestone" className="page-scroll">
+                Milestone
               </a>
             </li>
-            <li>
-              <a href="#testimonials" className="page-scroll">
-                Testimonials
-              </a>
-            </li>
+         
             <li>
               <a href="#team" className="page-scroll">
                 Team

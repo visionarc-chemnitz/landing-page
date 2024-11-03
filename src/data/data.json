@@ -93,7 +93,7 @@
       "job": "Developer"
     },
     {
-      "img": "img/team/5.jpg",
+      "img": "img/team/5.jpeg",
       "name": "Omkar",
       "job": "Developer"
     }
@@ -124,33 +124,6 @@
       "icon": "fa fa-magic",
       "title": "Lorem ipsum",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    }
-  ],
-  "milestones": [
-    {
-      "date": "January 2023",
-      "title": "Project Kickoff",
-      "description": "Initial project kickoff meeting with all stakeholders."
-    },
-    {
-      "date": "March 2023",
-      "title": "First Prototype",
-      "description": "Completion of the first prototype."
-    },
-    {
-      "date": "June 2023",
-      "title": "Beta Release",
-      "description": "Release of the beta version for user testing."
-    },
-    {
-      "date": "September 2023",
-      "title": "Final Release",
-      "description": "Official release of the final product."
-    },
-    {
-      "date": "December 2023",
-      "title": "Post-Launch Review",
-      "description": "Review of the project and planning for future updates."
     }
   ]
 }

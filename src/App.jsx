@@ -3,8 +3,6 @@ import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
 import { Services } from "./components/services";
-import { Gallery } from "./components/gallery";
-import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import Milestone from "./components/milestone"; // Ensure this path is correct
@@ -31,8 +29,6 @@ const App = () => {
       <About data={landingPageData.About} />
       <Services data={landingPageData.Services} />
       <Milestone data={landingPageData.Milestones} /> {/* Ensure the key matches the data structure */}
-      <Gallery data={landingPageData.Gallery} />
-      <Testimonials data={landingPageData.Testimonials} />
       <Team data={landingPageData.Team} />
       <Contact data={landingPageData.Contact} />
       <Footer />
