@@ -1,0 +1,119 @@
+.contact-container {
+  padding: 20px;
+  width: 100%; /* Ensure the container takes the full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  background: linear-gradient(to right, #3d426e 0%, #5ca9fb 100%); /* Apply the gradient background */
+  color: white; /* Ensure text is readable on the gradient background */
+   /* Ensure the container takes up the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space between elements */
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.contact-title h2 {
+  color: #ffffff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  color: #000; /* Set text color to black for readability */
+  background: #fff; /* Set background color to white */
+  border: 1px solid #ccc; /* Add a border for better visibility */
+  border-radius: 4px; /* Add some border radius for a smoother look */
+}
+
+.btn-custom {
+  padding: 10px;
+}
+
+.contact-info {
+  margin-top: 20px;
+  text-align: center; /* Center the contact info text */
+}
+
+.footer {
+  width: 100%; /* Ensure the footer takes the entire width */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  flex-direction: column; /* Stack the content vertically */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .btn-custom {
+    width: 100%;
+  }
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    width: 100%; /* Ensure the footer takes the entire width */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Stack the content vertically */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .footer .container {
+    max-width: 100%;
+    text-align: center; /* Center the text inside the container */
+    padding: 0; /* Remove padding from the container */
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: #000; /* Set icon color */
+    margin: 0 10px;
+    font-size: 24px; /* Increase icon size */
+    text-decoration: none;
+    display: inline-block;
+    width: 50px; /* Set width for circle */
+    height: 50px; /* Set height for circle */
+    line-height: 50px; /* Center icon vertically */
+    border-radius: 50%; /* Make the icon circular */
+    background-color: #fff; /* Background color for the circle */
+    border: 2px solid #ccc; /* Border for the circle */
+    text-align: center; /* Center icon horizontally */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    padding: 8px; /* Add some padding to the circle */
+  }
+  
+  .social-icons a:hover {
+    color: #007bff; /* Change color on hover */
+    background-color: #e9ecef; /* Change background color on hover */
+  }
