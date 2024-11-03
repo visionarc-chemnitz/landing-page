@@ -1,0 +1,86 @@
+#milestone {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #007bff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-item {
+  padding: 20px 30px;
+  position: relative;
+  background: #fff;
+  border-radius: 6px;
+  width: 45%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-item.accomplished {
+  border-left: 5px solid #28a745; /* Green border for accomplished tasks */
+}
+
+.timeline-number {
+  position: absolute;
+  top: -10px;
+  left: -30px;
+  background: #007bff;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.timeline-date {
+  font-size: 14px;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.timeline-content h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.timeline-content p {
+  margin: 0;
+}

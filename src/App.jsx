@@ -7,6 +7,8 @@ import { Gallery } from "./components/gallery";
 import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
+import Milestone from "./components/milestone"; // Ensure this path is correct
+import Footer from './components/footer'; 
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -28,10 +30,12 @@ const App = () => {
       <Header data={landingPageData.Header} />
       <About data={landingPageData.About} />
       <Services data={landingPageData.Services} />
+      <Milestone data={landingPageData.Milestones} /> {/* Ensure the key matches the data structure */}
       <Gallery data={landingPageData.Gallery} />
       <Testimonials data={landingPageData.Testimonials} />
       <Team data={landingPageData.Team} />
       <Contact data={landingPageData.Contact} />
+      <Footer />
     </div>
   );
 };
