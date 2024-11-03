@@ -17,7 +17,7 @@ export const Services = (props) => {
                   <i className={`${d.icon} service-icon`}></i>
                   <div className="service-desc">
                     <h3>{d.name}</h3>
-                    <p>{d.text}</p>
+                    <p className="service-text">{d.text}</p> {/* Add padding here */}
                   </div>
                 </div>
               ))
